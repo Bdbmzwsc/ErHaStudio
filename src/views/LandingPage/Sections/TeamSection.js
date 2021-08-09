@@ -75,12 +75,12 @@ export default function TeamSection() {
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img src={team2} alt="..." className={imageClasses} />
+                <img src={team3} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                忆梦烟雨
+                Samzhangjy
                 <br />
-                <small className={classes.smallTitle}>管理员</small>
+                <small className={classes.smallTitle}>管理员、网页编写者</small>
               </h4>
               <CardBody>
                 <p className={classes.description}>qwq我也不知道写啥</p>
@@ -106,12 +106,12 @@ export default function TeamSection() {
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img src={team3} alt="..." className={imageClasses} />
+                <img src={team2} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                samzhangjy
+                布格拉广场
                 <br />
-                <small className={classes.smallTitle}>啥用没有</small>
+                <small className={classes.smallTitle}>工作室创始人之一</small>
               </h4>
               <CardBody>
                 <p className={classes.description}>qwq我也不知道写啥</p>
