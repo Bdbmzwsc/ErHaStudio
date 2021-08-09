@@ -43,48 +43,22 @@ const useStylesTable = makeStyles({
   },
 });
 
-export default function VBSection() {
+export default function Section() {
   const [expanded, setExpanded] = React.useState(false);
 
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
-  function createData(title, platform, link, linkShow) {
-    return { title, platform, link, linkShow };
+  function createData(title, platform, link, extract) {
+    return { title, platform, link, extract };
   }
 
-  const rowsVB = [
+  const rowsSkinTester = [
     createData(
-      "第一集",
-      "BiliBili",
-      "https://www.bilibili.com/video/BV1fJ411G7r9",
-      "BV1fJ411G7r9"
-    ),
-    createData(
-      "第二集",
-      "BiliBili",
-      "https://www.bilibili.com/video/BV1oJ41177Hj",
-      "BV1oJ41177Hj"
-    ),
-    createData(
-      "第三集",
-      "BiliBili",
-      "https://www.bilibili.com/video/BV1t7411j7v1",
-      "BV1t7411j7v1"
-    ),
-    createData(
-      "第四集",
-      "BiliBili",
-      "https://www.bilibili.com/video/BV1FE411g7Wo",
-      "BV1FE411g7Wo"
-    ),
-  ];
-  const rowsCSharp = [
-    createData(
-      "第一集",
-      "BiliBili",
-      "https://www.bilibili.com/video/BV1FJ411W7e5",
-      "BV1FJ411W7e5"
+      "SkinTester （0w01aBate）",
+      "百度网盘",
+      "https://pan.baidu.com/s/1KjVC1pe791ROUIEFA4miAg",
+      "jmms"
     ),
   ];
   const classes = useStyles();
@@ -94,7 +68,7 @@ export default function VBSection() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem cs={12} sm={12} md={8}>
-          <h2 className={classes.title}>下载教程</h2>
+          <h2 className={classes.title}>下载项目</h2>
           <br />
           <Accordion
             expanded={expanded === "panel1"}
@@ -105,26 +79,26 @@ export default function VBSection() {
               aria-controls="panel1bh-content"
               id="panel1bh-header"
             >
-              <Typography className={classesAcc.heading}>VB.Net教程</Typography>
+              <Typography className={classesAcc.heading}>
+                Skin Tester
+              </Typography>
               <Typography className={classesAcc.secondaryHeading}>
-                共四集
+                共一个版本
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <TableContainer component={Paper}>
                 <Table className={classesTable.table} aria-label="simple table">
-                  <caption>
-                    此教程为网络搜集得来，如有侵权请联系管理员删除。
-                  </caption>
                   <TableHead>
                     <TableRow>
                       <TableCell>名称</TableCell>
                       <TableCell>平台</TableCell>
                       <TableCell>链接</TableCell>
+                      <TableCell>提取码</TableCell>
                     </TableRow>
                   </TableHead>
                   <TableBody>
-                    {rowsVB.map((row) => (
+                    {rowsSkinTester.map((row) => (
                       <TableRow key={row.title}>
                         <TableCell component="th" scope="row">
                           {row.title}
@@ -132,55 +106,10 @@ export default function VBSection() {
                         <TableCell>{row.platform}</TableCell>
                         <TableCell>
                           <a href={row.link} target="_blank" rel="noreferrer">
-                            {row.linkShow}
+                            前往
                           </a>
                         </TableCell>
-                      </TableRow>
-                    ))}
-                  </TableBody>
-                </Table>
-              </TableContainer>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion
-            expanded={expanded === "panel2"}
-            onChange={handleChange("panel2")}
-          >
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel2bh-content"
-              id="panel2bh-header"
-            >
-              <Typography className={classesAcc.heading}>C#教程</Typography>
-              <Typography className={classesAcc.secondaryHeading}>
-                共一集
-              </Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <TableContainer component={Paper}>
-                <Table className={classesTable.table} aria-label="simple table">
-                  <caption>
-                    此教程为网络搜集得来，如有侵权请联系管理员删除。
-                  </caption>
-                  <TableHead>
-                    <TableRow>
-                      <TableCell>名称</TableCell>
-                      <TableCell>平台</TableCell>
-                      <TableCell>链接</TableCell>
-                    </TableRow>
-                  </TableHead>
-                  <TableBody>
-                    {rowsCSharp.map((row) => (
-                      <TableRow key={row.title}>
-                        <TableCell component="th" scope="row">
-                          {row.title}
-                        </TableCell>
-                        <TableCell>{row.platform}</TableCell>
-                        <TableCell>
-                          <a href={row.link} target="_blank" rel="noreferrer">
-                            {row.linkShow}
-                          </a>
-                        </TableCell>
+                        <TableCell>{row.extract}</TableCell>
                       </TableRow>
                     ))}
                   </TableBody>

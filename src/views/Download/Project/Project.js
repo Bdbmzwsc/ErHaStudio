@@ -13,11 +13,11 @@ import Parallax from "components/Parallax/Parallax.js";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import { scroller, Element } from "react-scroll";
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
-import VBSection from "./Sections/VBSection.js";
+import Section from "./Sections/Section.js";
 
 const dashboardRoutes = [];
 
-export default function DownloadTutorial(props) {
+export default function DownloadProject(props) {
   const { ...rest } = props;
   const landingClasses = makeStyles(styles)();
   return (
@@ -38,10 +38,8 @@ export default function DownloadTutorial(props) {
         <div className={landingClasses.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={landingClasses.title}>下载编程教程</h1>
-              <h4>
-                二哈工作室提供从网络搜集的各类编程教程，包括VB.Net、C#教程等。
-              </h4>
+              <h1 className={landingClasses.title}>下载二哈项目</h1>
+              <h4>二哈工作室自创编写各类项目均开源并提供下载方式。</h4>
               <br />
               <Button
                 color="danger"
@@ -54,7 +52,7 @@ export default function DownloadTutorial(props) {
                   });
                 }}
               >
-                下载教程&nbsp;&nbsp;
+                下载项目&nbsp;&nbsp;
                 <ArrowForwardIosIcon />
               </Button>
             </GridItem>
@@ -67,7 +65,7 @@ export default function DownloadTutorial(props) {
         >
           <div className={landingClasses.container}>
             <Element name="download">
-              <VBSection />
+              <Section />
             </Element>
           </div>
         </div>

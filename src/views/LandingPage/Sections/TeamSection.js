@@ -78,7 +78,7 @@ export default function TeamSection() {
                 <img src={team3} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                Samzhangjy
+                samzhangjy
                 <br />
                 <small className={classes.smallTitle}>管理员、网页编写者</small>
               </h4>
