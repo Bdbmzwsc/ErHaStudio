@@ -19,13 +19,12 @@ import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
 import Button from "components/CustomButtons/Button.js";
 
 import styles from "assets/jss/material-kit-react/components/headerLinksStyle.js";
-import { createBrowserHistory } from "history";
+import hist from "../../index.js";
 
 const useStyles = makeStyles(styles);
 
 export default function HeaderLinks(props) {
   const classes = useStyles();
-  const his = createBrowserHistory()
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
@@ -33,7 +32,7 @@ export default function HeaderLinks(props) {
           color="transparent"
           target="_blank"
           className={classes.navLink}
-          onClick={() => {his.push("/msg")}}
+          onClick={() => {hist.push("/msg")}}
         >
           <Chat className={classes.icons} /> 留言板
         </Button>

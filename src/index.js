@@ -9,6 +9,8 @@ import "assets/scss/material-kit-react.scss?v=1.10.0";
 import LandingPage from "views/LandingPage/LandingPage.js";
 import DownloadTutorial from "views/Download/Tutorial/Tutorial.js";
 import DownloadProject from "views/Download/Project/Project.js";
+import Msg from "views/Msg/Msg.js";
+import "@fontsource/roboto";
 
 var hist = createBrowserHistory();
 
@@ -17,6 +19,7 @@ ReactDOM.render(
     <Switch>
       <Route path="/download/tutorial" component={DownloadTutorial} />
       <Route path="/download/project" component={DownloadProject} />
+      <Route path="/msg" component={Msg} />
       <Route path="/" component={LandingPage} />
     </Switch>
   </Router>,

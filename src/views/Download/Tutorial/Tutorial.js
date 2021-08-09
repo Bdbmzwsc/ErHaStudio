@@ -39,7 +39,7 @@ export default function DownloadTutorial(props) {
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
               <h1 className={landingClasses.title}>下载编程教程</h1>
-              <h4>
+              <h4 style={{ color: "#fff" }}>
                 二哈工作室提供从网络搜集的各类编程教程，包括VB.Net、C#教程等。
               </h4>
               <br />

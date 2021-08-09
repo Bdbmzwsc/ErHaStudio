@@ -39,7 +39,9 @@ export default function DownloadProject(props) {
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
               <h1 className={landingClasses.title}>下载二哈项目</h1>
-              <h4>二哈工作室自创编写各类项目均开源并提供下载方式。</h4>
+              <h4 style={{ color: "#fff" }}>
+                二哈工作室自创编写各类项目均开源并提供下载方式。
+              </h4>
               <br />
               <Button
                 color="danger"
