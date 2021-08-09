@@ -53,7 +53,7 @@ export default function LandingPage(props) {
               <h4 style={{ color: "#fff" }}>
                 QQ群：1046984270
                 <br />
-                二哈工具都将保存在右上角的下载页面中
+                因网站空间不足，以后二哈的文件都会在百度网盘里
               </h4>
               <br />
               <Button
