@@ -10,6 +10,7 @@ import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/workStyle.js";
+import hist from "../../../index.js";
 
 const useStyles = makeStyles(styles);
 
@@ -23,7 +24,15 @@ export default function WorkSection() {
           <h4 className={classes.description}>
             你可以提交加入申请，我们的管理员会第一时间回复你。
           </h4>
-          <Button color="primary" size="lg" fullWidth round>
+          <Button
+            color="primary"
+            size="lg"
+            onClick={() => {
+              hist.push("/msg");
+            }}
+            fullWidth
+            round
+          >
             去发送申请
           </Button>
         </GridItem>

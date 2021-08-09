@@ -9,10 +9,10 @@ import { makeStyles } from "@material-ui/core/styles";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import Button from "components/CustomButtons/Button.js";
+// import Button from "components/CustomButtons/Button.js";
 import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
-import CardFooter from "components/Card/CardFooter.js";
+// import CardFooter from "components/Card/CardFooter.js";
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/teamStyle.js";
 
@@ -47,7 +47,7 @@ export default function TeamSection() {
               <CardBody>
                 <p className={classes.description}>qwq我也不知道写啥</p>
               </CardBody>
-              <CardFooter className={classes.justifyCenter}>
+              {/* <CardFooter className={classes.justifyCenter}>
                 <Button
                   justIcon
                   color="transparent"
@@ -69,7 +69,7 @@ export default function TeamSection() {
                 >
                   <i className={classes.socials + " fab fa-facebook"} />
                 </Button>
-              </CardFooter>
+              </CardFooter> */}
             </Card>
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
@@ -85,7 +85,7 @@ export default function TeamSection() {
               <CardBody>
                 <p className={classes.description}>qwq我也不知道写啥</p>
               </CardBody>
-              <CardFooter className={classes.justifyCenter}>
+              {/* <CardFooter className={classes.justifyCenter}>
                 <Button
                   justIcon
                   color="transparent"
@@ -100,7 +100,7 @@ export default function TeamSection() {
                 >
                   <i className={classes.socials + " fab fa-linkedin"} />
                 </Button>
-              </CardFooter>
+              </CardFooter> */}
             </Card>
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
@@ -116,7 +116,7 @@ export default function TeamSection() {
               <CardBody>
                 <p className={classes.description}>qwq我也不知道写啥</p>
               </CardBody>
-              <CardFooter className={classes.justifyCenter}>
+              {/* <CardFooter className={classes.justifyCenter}>
                 <Button
                   justIcon
                   color="transparent"
@@ -138,7 +138,7 @@ export default function TeamSection() {
                 >
                   <i className={classes.socials + " fab fa-facebook"} />
                 </Button>
-              </CardFooter>
+              </CardFooter> */}
             </Card>
           </GridItem>
         </GridContainer>
