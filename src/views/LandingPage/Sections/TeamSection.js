@@ -172,6 +172,16 @@ export default function TeamSection() {
                 >
                   <i className={classes.socials + " fas fa-envelope"} />
                 </Button>
+                <Button
+                  justIcon
+                  color="transparent"
+                  className={classes.margin5}
+                  href="https://github.com/Doctor-Britt-de"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className={classes.socials + " fab fa-github"} />
+                </Button>
               </CardFooter>
             </Card>
           </GridItem>
