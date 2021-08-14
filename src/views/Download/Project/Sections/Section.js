@@ -75,9 +75,16 @@ export default function Section() {
     createData(
       "Nitrogen",
       "Github",
-      "https://github.com/Creeper2333/Nitro",
+      "https://github.com/Creeper2333/Nitro-Language",
       "N/A",
       1
+    ),
+    createData(
+      "Nitrogen",
+      "Official",
+      "https://nitro-erha.vercel.app/",
+      "N/A",
+      2
     ),
   ];
   const projects = [
