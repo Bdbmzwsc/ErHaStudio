@@ -78,6 +78,16 @@ export default function TeamSection() {
                 >
                   <i className={classes.socials + " fab fa-github"} />
                 </Button>
+                 <Button
+                  justIcon
+                  color="transparent"
+                  className={classes.margin5}
+                  href="https://bdbmzwsc.github.io/MyBdbmzwsc"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className={classes.socials + " fa-user-circle-o"} />
+                </Button>
               </CardFooter>
             </Card>
           </GridItem>
