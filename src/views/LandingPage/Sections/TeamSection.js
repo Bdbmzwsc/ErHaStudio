@@ -144,7 +144,7 @@ export default function TeamSection() {
                 <img src={team2} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                布格拉广场
+                lcxliuym
                 <br />
                 <small className={classes.smallTitle}>管理员</small>
               </h4>
