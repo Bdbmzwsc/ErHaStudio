@@ -78,7 +78,7 @@ export default function TeamSection() {
                 >
                   <i className={classes.socials + " fab fa-github"} />
                 </Button>
-                 <Button
+            <Button
                   justIcon
                   color="transparent"
                   className={classes.margin5}
@@ -86,7 +86,7 @@ export default function TeamSection() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i className={classes.socials + " fa-user-circle-o"} />
+                  <i className={classes.socials + " fab fa-zhihu"} />
                 </Button>
               </CardFooter>
             </Card>
