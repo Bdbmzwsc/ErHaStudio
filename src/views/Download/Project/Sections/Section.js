@@ -70,13 +70,7 @@ export default function Section() {
       "N/A",
       1
     ),
-     createData(
-      "SJAWeb",
-      "Web",
-      "https://bdbmzwsc.github.io/SJA",
-      "N/A",
-      2
-    ),
+    createData("SJAWeb", "Web", "https://bdbmzwsc.github.io/SJA", "N/A", 2),
   ];
   const rowsNitro = [
     createData(
