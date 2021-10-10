@@ -78,7 +78,7 @@ export default function TeamSection() {
                 >
                   <i className={classes.socials + " fab fa-github"} />
                 </Button>
-            <Button
+                <Button
                   justIcon
                   color="transparent"
                   className={classes.margin5}
