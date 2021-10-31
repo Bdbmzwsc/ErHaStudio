@@ -89,14 +89,6 @@ export default function Section() {
     ),
   ];
   const rowsEADJ = [
-    createData(
-      "EADJ",
-      "Github",
-      "https://github.com/Bdbmzwsc/EAD_J",
-      "N/A",
-       1
-    ), 
-    createData(
       createData("EADJ", "Github", "https://github.com/Bdbmzwsc/EAD_J", "N/A", 1),
       createData("EADWeb", "Vercel", "https://ead-j.vercel.app", "N/A", 2),
   ];
