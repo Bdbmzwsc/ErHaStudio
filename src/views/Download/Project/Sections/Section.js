@@ -97,12 +97,8 @@ export default function Section() {
        1
     ), 
     createData(
-        "EADWeb",
-        "Vercel",
-        "https://ead-j.vercel.app",
-        "N/A",
-        2
-    ),
+      createData("EADJ", "Github", "https://github.com/Bdbmzwsc/EAD_J", "N/A", 1),
+      createData("EADWeb", "Vercel", "https://ead-j.vercel.app", "N/A", 2),
   ];
   const projects = [
     {
