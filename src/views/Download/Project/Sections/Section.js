@@ -88,6 +88,22 @@ export default function Section() {
       2
     ),
   ];
+  const rowsEADJ = [
+    createData(
+      "EADJ",
+      "Github",
+      "https://github.com/Bdbmzwsc/EAD_J",
+      "N/A",
+       1
+    ), 
+    createData(
+        "EADWeb",
+        "Vercel",
+        "https://ead-j.vercel.app",
+        "N/A",
+        2
+    ),
+  ];
   const projects = [
     {
       title: "Skin Tester",
@@ -103,6 +119,11 @@ export default function Section() {
       title: "Nitro",
       desc: "一位15岁的高中生开发的语言",
       project: rowsNitro,
+    },
+    {
+      title: "EAD_J",
+      desc: "一个加密解密的跨平台程序",
+      project: rowsEADJ,
     },
   ];
   const classes = useStyles();
