@@ -108,11 +108,6 @@ export default function Section() {
       desc: "一位15岁的高中生开发的语言",
       project: rowsNitro,
     },
-    {
-      title: "EAD_J",
-      desc: "一个加密解密的跨平台程序",
-      project: rowsEADJ,
-    },
   ];
   const classes = useStyles();
   const classesAcc = useStylesAcc();
