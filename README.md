@@ -1,3 +1,9 @@
+<p align="center">
+    <a href="https://github.com/samzhangjy/ErHaStudio">
+        <img src="https:https://raw.githubusercontent.com/samzhangjy/ErHaStudio/master/public/favicon.jpg" alt="Logo" width="80" height="80">
+    </a>
+</p>
+
 # ErHa Studio 二哈工作室
 
 ## What is ErHa Studio? 什么是二哈工作室？
