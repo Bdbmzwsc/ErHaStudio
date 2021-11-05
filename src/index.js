@@ -10,6 +10,7 @@ import LandingPage from "views/LandingPage/LandingPage.js";
 import DownloadTutorial from "views/Download/Tutorial/Tutorial.js";
 import DownloadProject from "views/Download/Project/Project.js";
 import Msg from "views/Msg/Msg.js";
+import News from "views/News/news.js";
 import ScrollToTop from "views/ScrollToTop";
 import "@fontsource/roboto";
 import "@fortawesome/fontawesome-free/css/all.css";
@@ -24,6 +25,7 @@ ReactDOM.render(
       <Route path="/download/tutorial" component={DownloadTutorial} />
       <Route path="/download/project" component={DownloadProject} />
       <Route path="/msg" component={Msg} />
+      <Route path="/news" component={News} />
       <Route path="/" component={LandingPage} />
     </Switch>
   </Router>,
