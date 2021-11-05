@@ -12,7 +12,7 @@ import ListItem from "@material-ui/core/ListItem";
 // import Tooltip from "@material-ui/core/Tooltip";
 
 // @material-ui/icons
-import { Chat, CloudDownload } from "@material-ui/icons";
+import { Chat, CloudDownload, FiberNew } from "@material-ui/icons";
 
 // core components
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
@@ -55,6 +55,19 @@ export default function HeaderLinks(props) {
             </Link>,
           ]}
         />
+      </ListItem>
+      <ListItem className={classes.listItem}>
+      <Button
+          color="transparent"
+          target="_blank"
+          className={classes.navLink}
+          onClick={() => {hist.push("/news")}}
+          buttonIcon={CloudDownload}
+        >
+       <FiberNew className={classes.icons} /> 新闻
+       {/* <i class={classes.social + " fa-newspaper-o"}/>*/  }
+        {/*<i className={classes.socials + " fa-newspaper-o"} />*/}
+        </Button>
       </ListItem>
       {/* <ListItem className={classes.listItem}>
         <Tooltip
