@@ -12,7 +12,7 @@ import ListItem from "@material-ui/core/ListItem";
 // import Tooltip from "@material-ui/core/Tooltip";
 
 // @material-ui/icons
-import { Chat, CloudDownload, FiberNew } from "@material-ui/icons";
+import { Chat, CloudDownload, Announcement } from "@material-ui/icons";
 
 // core components
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
@@ -32,7 +32,9 @@ export default function HeaderLinks(props) {
           color="transparent"
           target="_blank"
           className={classes.navLink}
-          onClick={() => {hist.push("/msg")}}
+          onClick={() => {
+            hist.push("/msg");
+          }}
         >
           <Chat className={classes.icons} /> 留言板
         </Button>
@@ -43,7 +45,7 @@ export default function HeaderLinks(props) {
           buttonText="下载"
           buttonProps={{
             className: classes.navLink,
-            color: "transparent",
+            color: "transparent"
           }}
           buttonIcon={CloudDownload}
           dropdownList={[
@@ -52,21 +54,23 @@ export default function HeaderLinks(props) {
             </Link>,
             <Link to="/download/project" className={classes.dropdownLink}>
               二哈项目
-            </Link>,
+            </Link>
           ]}
         />
       </ListItem>
       <ListItem className={classes.listItem}>
-      <Button
+        <Button
           color="transparent"
           target="_blank"
           className={classes.navLink}
-          onClick={() => {hist.push("/news")}}
+          onClick={() => {
+            hist.push("/news");
+          }}
           buttonIcon={CloudDownload}
         >
-       <FiberNew className={classes.icons} /> 新闻
-       {/* <i class={classes.social + " fa-newspaper-o"}/>*/  }
-        {/*<i className={classes.socials + " fa-newspaper-o"} />*/}
+          <Announcement className={classes.icons} /> 新闻
+          {/* <i class={classes.social + " fa-newspaper-o"}/>*/}
+          {/*<i className={classes.socials + " fa-newspaper-o"} />*/}
         </Button>
       </ListItem>
       {/* <ListItem className={classes.listItem}>
