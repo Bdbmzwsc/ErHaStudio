@@ -3,7 +3,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
-
+import Card from "components/Card/Card.js";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -30,6 +30,27 @@ export default function NewsSection() {
         <GridItem cs={12} sm={12} md={8}>
           <h2 className={classes.title}>新闻</h2>
           <br />
+          <Card>
+            <h1 align="center">The First News</h1>
+            <h3>
+              如你所见，第一篇News发布成功，但这的一切都是在js里进行更改，并且其优化做的不算很好
+              <br />
+            </h3>
+            <h2 align="center">但是</h2>
+            <h3>
+              这是第一篇News的发布，即(2021/11/5
+              20:53),我们也会在不久的将来做好此优化
+              <br />
+              其中未完善的功能导致的有：不便的发布News、界面的不好看、无法查看时间等等问题,同样，我们也会在不久的将来补全这些功能
+            </h3>
+            <h2>
+              以上就是EH第一篇测试性News的发布，如果发现Bug，请在
+              <a href="https://github.com/samzhangjy/ErHaStudio/issues">
+                Github中报告issues
+              </a>
+              ,谢谢访问
+            </h2>
+          </Card>
         </GridItem>
       </GridContainer>
     </div>
