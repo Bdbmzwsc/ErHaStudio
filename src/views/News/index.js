@@ -13,7 +13,7 @@ import { scroller, Element } from "react-scroll";
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
 import NewsSection from "./Sections/NewsSection";
 
-export default function News() {
+export default function NewsPage() {
   const landingClasses = makeStyles(styles)();
   return (
     <div>

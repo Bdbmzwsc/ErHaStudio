@@ -10,7 +10,7 @@ import LandingPage from "views/LandingPage/LandingPage.js";
 import DownloadTutorial from "views/Download/Tutorial/Tutorial.js";
 import DownloadProject from "views/Download/Project/Project.js";
 import Msg from "views/Msg/Msg.js";
-import News from "views/News/News.js";
+import News from "views/News";
 import ScrollToTop from "views/ScrollToTop";
 import "@fontsource/roboto";
 import "@fortawesome/fontawesome-free/css/all.css";
