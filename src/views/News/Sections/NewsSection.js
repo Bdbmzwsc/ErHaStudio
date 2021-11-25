@@ -31,6 +31,28 @@ export default function NewsSection() {
           <h2 className={classes.title}>新闻</h2>
           <br />
           <Card>
+            <h1 align="center">EAM上线！！</h1>
+            <h3 align="center">
+              <h1 align="center">EAM</h1>
+              <br />
+              EH-Account-Manager,一个EH的平台管理程序,您可以在此注册或登录您的EH账号
+              <br />
+              <h1 align="center">您在EAM可以做什么?</h1>
+              <br />
+              在里面用您的账户创建项目，或者安装您想使用的EH项目，不久的将来，我们将在此添加云保存功能，也就是说，您在本地安装的EH项目，可以在别的电脑进行还原
+              <br />
+              <h1 align="center">您该怎样开发?</h1>
+              <br />
+              您可以发送邮件到{" "}
+              <a href="mailto:bdbmzwsc-lee@foxmail.com">
+                bdbmzwsc-lee@foxmail.com
+              </a>
+              或到我们的<a href="https://github.com/Bdbmzwsc/EAM">Github</a>仓库
+              <br />
+              Thank for reading
+            </h3>
+          </Card>
+          <Card>
             <h1 align="center">The First News</h1>
             <h3>
               如你所见，第一篇News发布成功，但这的一切都是在js里进行更改，并且其优化做的不算很好
